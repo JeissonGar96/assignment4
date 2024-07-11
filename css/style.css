@@ -48,7 +48,7 @@ body {
 
 header{
     position: relative;
-    height: 35vh;
+    height: 45vh;
     background-image: url(../img/1.jpg);
     background-size: cover;
     background-position: center;
@@ -135,8 +135,7 @@ main{
     border: 1px solid transparent ;
     box-sizing: border-box;
     width: 250px;
-    text-align: center;
-    
+    min-height: 400px;
 }
 
 .card:hover{
@@ -168,7 +167,13 @@ main{
     text-align: justify;
     font-size: 12px;
     width: 100%;
-    color: #555;
+    color: #555; 
+}
+
+.button{
+    position: absolute;
+    background-color: #000;
+
     
 }
 

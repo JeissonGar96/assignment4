@@ -76,6 +76,7 @@ header::before {
 .form{
     position: relative;
     max-width: 600px;
+    height: 100%;
     margin: 30px auto;
     background: rgba(49, 49, 49, 0.047);
     backdrop-filter: blur(10px);
@@ -85,6 +86,7 @@ header::before {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     z-index: 1;  
+    box-sizing: border-box;
 }
 
 h2{
@@ -144,4 +146,50 @@ textarea{
 
 .button:hover{
     opacity: 0.86;
+}
+
+
+/* -- FOTTER -- */
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    height: 25vh;
+    align-content: center;
+    z-index: 2;
+    
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-item{
+    padding: 10px;
+    display: flex;
+}
+
+svg{
+    margin: 0 10px;
+    
+}
+
+.footer-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.rigths-footer{
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
 }

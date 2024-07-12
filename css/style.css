@@ -139,7 +139,7 @@ main{
     border-radius: 5px;
     box-sizing: border-box;
     width: 250px;
-    min-height: 400px;
+    min-height: 390px;
 }
 
 .card:hover{
@@ -164,8 +164,12 @@ main{
     font-weight: bold;
 }
 
+.card:hover > .card-link{
+    text-decoration: underline 1.2px;
+}
+
 .card-text{
-    margin: 20px auto;
+    margin: 15px auto;
     text-align: justify;
     font-size: 12px;
     width: 100%;
@@ -185,11 +189,17 @@ main{
     right: 20px;
 }
 
+.card:hover > .button{
+    color: #48e;
+    border: 1px solid #48e
+}
+
 
 @media screen and (max-width: 591px) {
 
     .card{
         width: 500px;
+        height: 41vh;
     }
 
     .card-img{
